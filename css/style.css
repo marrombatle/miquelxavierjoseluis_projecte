@@ -13,6 +13,7 @@ header {
     width: 100%;
     height: 100vh;       /* Ocupa toda la pantalla */
     overflow: hidden;    /* Oculta lo que sobresalga */
+    display: flex;
 }
 
 /* Video de fondo */
@@ -54,4 +55,30 @@ header ul li a {
 /* Opcional: efecto hover */
 header ul li a:hover {
     text-decoration: underline;
+}
+
+header img {
+    z-index: 10;
+    position: absolute;
+    width: auto;
+    height: 5em;
+}
+
+header h1, h2 {
+    position: absolute;
+    left: 50%; /*moure cap a la dreta */
+    transform: translateX(-50%); /* centra horizontalmente */
+    color: white;
+  /*  text-shadow: 0 0 10px black;*/
+    z-index: 10;
+    text-align: center;
+}
+header h1 {
+    top: 50%;
+    font-size: 30pt;
+}
+/* H2 un poco más abajo */
+header h2 {
+    top: calc(50% + 3em); /* mueve h2 debajo del h1 */
+    font-size: 24pt;
 }
