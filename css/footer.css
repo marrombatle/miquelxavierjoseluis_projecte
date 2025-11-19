@@ -1,0 +1,95 @@
+/* FOOTER */
+
+/* Contenidor principal */
+footer {
+    background-image: url(/img/footerimg.jpg); /* Color de fons  */
+    color: #C0C0C0; /* Color del texte */
+    padding: 40px 20px 20px; /* Espai intern */
+    margin-top: 50px; /* Separació del contingut superior */
+}
+
+/* Secció que conté els artícles */
+footer section {
+    display: flex; /* Activa flexbox per la distribució flexible */
+    flex-wrap: wrap; /* Permit que els elements es tornin en múltiples línies */
+    justify-content: space-around; /* Distribieix l'espaci entre elements */
+    align-items: flex-start; /* Alinea els elements a l'inici de l'eix vertical */
+    max-width: 1200px; /* Amplada màxima del contenidor */
+    margin: 0 auto; /* Centra el contenidor horizontalment */
+    gap: 30px; /* Espaci entre los artícles */
+}
+
+/* Cada artículo */
+footer article {
+    flex: 1; /* Permit que cada article creixi i ocupi l'espai disponible */
+    min-width: 250px; /* Amaplada mínima */
+    text-align: center; /* Centra el */
+}
+
+/* Títulos h4 */
+footer h4 {
+    font-size: 1.3rem; /* Tamany de la font */
+    margin-bottom: 15px; /* Espai inferior */
+    color: #C0C0C0; /* Color del text */
+    font-weight: 600; /* Gruixa de la font */
+}
+
+/* REDES SOCIALES */
+
+footer article a {
+    display: inline-block; /* Es torna de bloc que ocupi tota una línia */
+    margin: 0 10px; /* Espai horizontal entre icones */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Animació dels enllaços */
+}
+
+footer article a img {
+    width: 40px; /* Amplada */
+    height: 40px; /* Altura */
+}
+
+footer article a:hover {
+    transform: translateY(-5px); /* Puja la icona 5px cap a dalt  */
+}
+
+/* SECCIÓ CONTACTO */
+
+footer address {
+    font-style: normal; /* Elimina la cursiva por defecto del elemento address */
+    line-height: 1.8; /* Espaciado entre líneas para mejor legibilidad */
+}
+
+footer address p {
+    margin: 5px 0; /* Pequeño margen vertical entre párrafos */
+}
+
+footer address a {
+    color: #3498db; 
+    text-decoration: none; /* Elimina el subrayado por defecto */
+}
+
+/* COPYRIGHT */
+
+footer article:last-child {
+    flex-basis: 100%; /* Ocupa todo el ancho disponible */
+    margin-top: 20px; /* Espacio superior */
+    padding-top: 20px; /* Relleno superior */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Línea divisoria sutil */
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    color: #95a5a6; /* Color gris más apagado */
+}
+
+/* RESPONSIVE*/
+
+/* Media query per pantalles menors a 768px (tablets i mòvils) */
+@media (max-width: 768px) {
+   
+    footer section {
+        flex-direction: column; /* Posa els elemtns en fila horitzontalment com una pila */
+        align-items: center; 
+    }
+    
+    footer article {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+}
