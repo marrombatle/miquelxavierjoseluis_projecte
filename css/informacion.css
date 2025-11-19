@@ -1,129 +1,16 @@
-.info {
-    background-color: #b372cc;
-    font-family: Arial, sans-serif;
-    color: #16160a;
-    padding: 0;
-    margin: 0;
-}
-.info header h1 {
-    font-size: 2.5em;
-    color: #f9f3f3;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
 
-.info main article h2,p {
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    
-}
-.info main article h2 {
-    color: #f2ebeb;
-    font-size: 1.8em;
-    margin-bottom: 10px;
+    gap: 10px;
+    border: 4px solid #150505;
     text-align: center;
-}
-.info main article p {
-    font-size: 1.2em;
-    margin-bottom: 15px;
-    text-align: center;
-    margin-right: 8px;
-    margin-right: 8px;
-}
-.info header {
-    text-align: center;
-    background-color: #052a53;
-    margin: 0;
-    padding: 0;
-
-}
-.info img {
-    width: 50px;
-    height: auto;
-    vertical-align: middle;
-    margin-right: 10px;
-    margin-top: 0;
-}
-.info main {
-    margin: 0;
-    margin-top: 20px;
-
-}
-.funcion h2 {
-    justify-content: center;
-    color: aqua;
-}
-.nosotros {
-    display: flex;
-    margin: 0;
-}
-.funcion {
-    margin-left: 500px;
-    margin-right: 500px;
-}   
-.ofrecemos {
-    margin-left: 500px;
-    margin-right: 500px;
-}
-
-.info main article ul, h3 {
-    font-family: "Courgette", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 19px;
-}
-.imagen_planeta {
-    background-image: url("../Fotos/planets-solar-system-pluto-3d-260nw-1669381609-removebg-preview.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 70px;
-    background-size: 50% 150%;
-
-}
-.imagen_nosotros_1 {
-    padding: 0; 
-    width: 7%;
-    background-color: red;
-    text-align: end;
-}
-.imagen_nosotros_1 img {
-    width: 100%;
-    height: auto;
-    transform: scale(-1);
-}
-
-.imagen_nosotros_2 {
-    text-align: start;
-    width: 7%;
-    padding: 0;
-    background-color: #d06916;
-}
-.imagen_nosotros_2 img {
-    margin-top: 60px;
-    width: 100%;
-    height: auto;
-}
-
-.imagen_nosotros_3 {
-    width: 25%;
-    padding: 0;
-    background-color: #1cc31c;;
-}
-
-.imagen_nosotros_0 {
-    width: 25%;
-    padding: 0;
-    background-color: #052a53;;
-}
-.imagen_nosotros_0 img {
-    margin-top: 60px;
-    width: 100%;
-    height: auto;
-}
-
-.quienes_somos {
-    width: 40%;
 }
