@@ -1,3 +1,7 @@
 header video{
     height: 12%;
 }
+header{
+    position: static;
+    height: 5em;
+}
