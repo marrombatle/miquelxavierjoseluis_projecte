@@ -1,6 +1,6 @@
-
-
-
+main {
+    background: url('/img/fondohtmlgalaxia.jpg');
+}
 
 /* ...Los arituculos tendran un borde y sus dimensiones... */
 .product {     /* evita que ocupe 100% del ancho */
@@ -11,9 +11,7 @@
     border-radius: 2em;
     background: #808080;
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    
+    text-align: center;
 }
 /* ...Cada imagen, de la clase producto tendra sus dimensiones... */
 .product img {
@@ -21,19 +19,19 @@
     height: 14em;
 }
 
-main {
+section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: url('/img/fondohtmlgalaxia.jpg');
 }
 
 img:hover {
-    height: 20em;
+    transform: scale(1.25);
 }
 
 img {
     transition: 1s;
+    padding-top: 2em;
 }
 
 body {
