@@ -1,0 +1,49 @@
+
+
+
+
+/* ...Los arituculos tendran un borde y sus dimensiones... */
+.product {     /* evita que ocupe 100% del ancho */
+    width: 20em;               /* ancho fijo por caja (ajusta si quieres) */
+    padding: 1em;              /* espacio entre borde y contenido */
+    margin: 0.8em;               /* espacio entre cajas */
+    border: 0.4em solid #646464;
+    border-radius: 2em;
+    background: #808080;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+/* ...Cada imagen, de la clase producto tendra sus dimensiones... */
+.product img {
+    justify-content: center;
+    height: 14em;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: url('/img/fondohtmlgalaxia.jpg');
+}
+
+img:hover {;
+    height: 20em;
+}
+
+img {
+    transition: 1s;
+}
+
+body {
+    background-repeat: repeat;
+    background-position: top left;
+    background-size: auto;       /* mantiene tamaño original para repetir */
+    background-attachment: scroll; /* no está fijada */
+}
+
+h3 {
+    text-align: center;
+    color: #7c7c7c;
+}
