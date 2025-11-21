@@ -2,6 +2,14 @@ main {
     background: url('/img/fondohtmlgalaxia.jpg');
 }
 
+h2 {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    color: aliceblue;
+    font-size: 5em;
+}
+
 /* ...Los arituculos tendran un borde y sus dimensiones... */
 .product {     /* evita que ocupe 100% del ancho */
     width: 20em;               /* ancho fijo por caja (ajusta si quieres) */
@@ -17,31 +25,23 @@ main {
 .product img {
     justify-content: center;
     height: 14em;
-}
-
-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-img:hover {
-    transform: scale(1.25);
-}
-
-img {
     transition: 1s;
     padding-top: 2em;
 }
+/* ...Y las secciones tendran un display flex para que se adapten... */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
 
-body {
-    background-repeat: repeat;
-    background-position: top left;
-    background-size: auto;       /* mantiene tamaño original para repetir */
-    background-attachment: scroll; /* no está fijada */
+.product img:hover {
+    transform: scale(1.25);
 }
 
 h3 {
-    text-align: center;
-    color: #7c7c7c;
+    color: black;
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
 }
