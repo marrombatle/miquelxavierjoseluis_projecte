@@ -42,12 +42,12 @@ footer article a {
     transition: transform 0.3s ease, opacity 0.3s ease; /* Animació dels enllaços */
 }
 
-footer article a img {
+.social img {
     width: 40px; /* Amplada */
     height: 40px; /* Altura */
 }
 
-footer article a:hover {
+.social:hover {
     transform: translateY(-5px); /* Puja la icona 5px cap a dalt  */
 }
 

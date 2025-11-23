@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contingut</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/header.css" rel="stylesheet">
+    <!--<link href="css/style.css" rel="stylesheet"> -->
+    <!-- <link href="css/header.css" rel="stylesheet"> -->
     <link href="css/contingut.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="/img/logotipo.png" alt="logotipo con nombre starwish"> </a>
+            <a href="index.html"><img id="logotipo" src="/img/logotipo.png" alt="logotipo con nombre starwish"> </a>
             <ul>
                 <li><a href="contingut.html">Contingut</a></li>
                 <li><a href="detall.html">Detall</a></li>
@@ -25,12 +25,13 @@
         </video>
     </header>
     <main>
-        <!-- Productos y secciones -->
-        <secion class="section_products" id="satelites">
+        <!-- Titulo de secciones -->
+        <h2 class="sections">Satelites</h2>
+        <!-- Productos y secciones (satelites) -->
+        <section class="section_products" id="satelites">
             <article class="product" id="product_1">
                 <img src="img/luna.png" alt="Foto de la Luna">
                 <h3>Luna</h3>
-                <p class="product_description">La luna es lkadlkadñ</p>
                 <div class="price">500 €</div>
                 <div class="action">
                     <button class="button_añadir">Añadir</button>
@@ -40,18 +41,19 @@
             <article class="product" id="product_2">
                 <img src="img/ganimedes.png" alt="Foto de Ganimedes">
                 <h3>Ganimedes</h3>
-                <p class="product_description">El Ganimedes adLKJWadkjsadÑWgdkjsad </p>
                 <div class="price">13.000 €</div>
                 <div class="action">
                     <button class="button_añadir">Añadir</button>
                 </div>
             </article>
-        </secion>
-        <secion class="section_products" id="planetas">
+        </section>
+        <!-- Titulo de secciones -->
+        <h2 class="sections">Planetas</h2>
+        <!-- Productos y secciones (planetas) -->
+        <section class="section_products" id="planetas">
             <article class="product" id="product_3">
                 <img src="img/marte.png" alt="">
                 <h3>Marte</h3>
-                <p class="product_description">Marte es un planeta qihLKJBDKJLBsa</p>
                 <div class="price">3.000 €</div>
                 <div class="action">
                     <button class="button_añadir">Añadir</button>
@@ -61,13 +63,12 @@
             <article class="product" id="product_4">
                 <img src="/img/jupiter.png" alt="">
                 <h3>Jupiter</h3>
-                <p class="product_description">Jupiter KDbijekkjabfksafhsaoi</p>
                 <div class="price">20.000 €</div>
                 <div class="action">
                     <button class="button_añadir">Añadir</button>
                 </div>
             </article>
-        </secion>
+        </section>
     </main>
 </body>
 </html>

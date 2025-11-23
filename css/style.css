@@ -1,6 +1,7 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /* Quitar márgenes del body */
 body {
     margin: 0;
@@ -11,8 +12,10 @@ body {
 header {
     position: relative;
     width: 100%;
-    height: 100vh;       /* Ocupa toda la pantalla */
-    overflow: hidden;    /* Oculta lo que sobresalga */
+    height: 100vh;
+    /* Ocupa toda la pantalla */
+    overflow: hidden;
+    /* Oculta lo que sobresalga */
     display: flex;
 }
 
@@ -23,8 +26,10 @@ header video {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;   /* Evita barras blancas */
-    z-index: 1;          /* Video al fondo */
+    object-fit: cover;
+    /* Evita barras blancas */
+    z-index: 1;
+    /* Video al fondo */
     border: none;
     margin: 0;
     padding: 0;
@@ -40,7 +45,8 @@ header ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    z-index: 10;         /* Por encima del video */
+    z-index: 10;
+    /* Por encima del video */
 }
 
 /* Enlaces del menú */
@@ -49,7 +55,8 @@ header ul li a {
     font-size: 20px;
     text-decoration: none;
     font-weight: bold;
-    text-shadow: 0 0 5px black; /* Para que se vea sobre el video */
+    text-shadow: 0 0 5px black;
+    /* Para que se vea sobre el video */
 }
 
 /* Opcional: efecto hover */
@@ -57,28 +64,72 @@ header ul li a:hover {
     text-decoration: underline;
 }
 
-header img {
+#logotipo {
     z-index: 10;
     position: absolute;
     width: auto;
     height: 5em;
 }
 
-header h1, h2 {
+header h1,
+h2 {
     position: absolute;
-    left: 50%; /*moure cap a la dreta */
-    transform: translateX(-50%); /* centra horizontalmente */
+    left: 50%;
+    /*moure cap a la dreta */
+    transform: translateX(-50%);
+    /* centra horizontalmente */
     color: white;
-  /*  text-shadow: 0 0 10px black;*/
+    /*  text-shadow: 0 0 10px black;*/
     z-index: 10;
     text-align: center;
 }
+
 header h1 {
     top: 50%;
     font-size: 30pt;
 }
+
 /* H2 un poco más abajo */
 header h2 {
-    top: calc(50% + 3em); /* mueve h2 debajo del h1 */
+    top: calc(50% + 3em);
+    /* mueve h2 debajo del h1 */
     font-size: 24pt;
+}
+
+/* cards main index */
+.imgindex {
+    width: 10em;
+    height: auto;
+    background-color: black;
+}
+body {
+    background-color: #c0c0c0;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container article {
+    width: 18em;
+    margin: 2.5em 0.5em 0em 0.5em;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 14pt;
+    border: 2px solid;
+    border-radius: 2em;
+    color: beige;
+    background-color: black;
+}
+.btncontingut {
+    font-size: large;
+    padding: 0.5em 2em 0.5em 2em;
+    background-color: #c0c0c0;
+    border-radius: 2em;
+     transition-duration: 0.4s;
+
+}
+.btncontingut:hover {
+    background-color: orange;
+    color: black;
 }

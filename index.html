@@ -15,7 +15,7 @@
      manera continua i msense volum -->
     <header>
         <nav>
-            <a href="index.html"><img src="/img/logotipo.png" alt="logotipo con nombre starwish"> </a>
+            <a href="index.html"><img id="logotipo" src="/img/logotipo.png" alt="logotipo con nombre starwish"> </a>
             <ul>
                 <li><a href="contingut.html">Contingut</a></li>
                 <li><a href="detall.html">Detall</a></li>
@@ -33,34 +33,38 @@
     <!-- creació d'un main on hi ha contigut principal de la plana index 
      mostram tres articles on cada un mostram cada producte que tenim-->
     <main>
-        <section>
+        <section class="container">
             <article>
                 <h3>Planetas</h3>
+                <img class="imgindex" src="img/marte.png">
                 <p>Nombra tu propio planeta y convierte un rincón del universo en algo único. Recibirás un certificado
                     personalizado con su ubicación y datos astronómicos, un regalo eterno para sorprender y fascinar a
                     quien más quieras.</p>
-                <a href="contingut.html">Leer más</a>
+                <a href="contingut.html"><button class="btncontingut">Comprar</button></a>
             </article>
             <article>
                 <h3>Satelites</h3>
+                <img class="imgindex" src="img/luna.png">
                 <p>Reserva tu propio satélite natural y posee un pedacito del cosmos. Recibirás un certificado
                     personalizado con su ubicación y datos astronómicos, un regalo único y eterno para los amantes del
                     espacio.</p>
-                <a href="#">Leer más</a>
+                <a href="contingut.html"><button class="btncontingut">Comprar</button></a>
             </article>
             <article>
                 <h3>Nebulosas</h3>
+                <img class="imgindex" src="img/nebu1.jpg">
                 <p>Adopta tu propia nebulosa y posee un rincón único del cosmos. Recibirás un certificado personalizado
                     con su ubicación y datos astronómicos, un regalo eterno y fascinante para cualquier amante del
                     cielo.</p>
-                <a href="#">Leer más</a>
+                <a href="contingut.html"><button class="btncontingut">Comprar</button></a>
             </article>
             <article>
                 <h3>Estrelles</h3>
-                <p>regala un detalle único que durará para siempre. Recibirás un certificado personalizado con sus
+                <img class="imgindex" src="img/sol.png">
+                <p>Regala un detalle único que durará para siempre. Recibirás un certificado personalizado con sus
                     coordenadas y un recuerdo eterno en el cielo. Perfecto para sorprender en cualquier ocasión
                     especial.</p>
-                <a href="#">Leer más</a>
+                <a href="contingut.html"><button class="btncontingut">Comprar</button></a>
             </article>
         </section>
     </main>
@@ -70,15 +74,15 @@
         <section>
             <article>
                 <h4>Redes Sociales</h4>
-                <a href="https://www.facebook.com/?locale=ca_ES"><img src="img/facebook.png"></li>
-                    <a href="https://www.instagram.com/"><img src="img/instagram.png"></a>
+                <a class="social" href="https://www.facebook.com/?locale=ca_ES"><img src="img/facebook.png"></li>
+                <a class="social" href="https://www.instagram.com/"><img src="img/instagram.png"></a>
             </article>
             <article>
                 <h4>Contacto</h4>
                 <address>
                     <p>Empresa XYZ</p>
                     <p>Calle Falsa 123, Ciudad, País</p>
-                    <p>Tel: +34 123 456 789</p>
+                    <p>Teléfono: <a href="tel:+34123456789">+34 123 456 789</a></p>
                     <p>Email: <a href="mailto:contacto@empresa.com">contacto@starwish.com</a></p>
                 </address>
             </article>
