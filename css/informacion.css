@@ -4,13 +4,58 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
-
+h2, h3, ul, p {
+    list-style: none;
+    padding-left: 0;
+}
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+.info {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 0;
+}
 
+.datos {
+    display: flex;
+    border: 2px solid #0f1567;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
 
-    gap: 10px;
-    border: 4px solid #150505;
+}
+
+.nosotros, .ofrecemos, .funcion {
+    border: 6px solid #150303;
+    border-radius: 20%;
+    background-color: #748907;
+    width: 400px;
+    height: 400px;
     text-align: center;
+    overflow: hidden;
+}
+
+.estrellas, .planetas, .satelites, .Nebulosas {
+    border: 2px solid #0f1567;
+    border-radius: 50%;
+    width: 390px;
+    height: 390px;
+    border: 6px solid #150303;
+    overflow: hidden; /* Evita que el contenido se desborde */
+    padding: 50px;
+}
+
+.datos h3 {
+    text-align: center;
+}
+.datos ul {
+    text-align: start;
+
 }
