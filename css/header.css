@@ -1,7 +1,95 @@
-header video{
-    height: 12%;
+* {
+    font-family: Arial, Helvetica, sans-serif;
 }
-header{
-    position: static;
+/* Quitar márgenes del body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor del video */
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Ocupa toda la pantalla */
+    overflow: hidden;
+    /* Oculta lo que sobresalga */
+    display: flex;
+}
+
+/* Video de fondo */
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Evita barras blancas */
+    z-index: 1;
+    /* Video al fondo */
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menú superpuesto */
+header ul {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    /* Por encima del video */
+}
+
+/* Enlaces del menú */
+header ul li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 5px black;
+    /* Para que se vea sobre el video */
+}
+
+/* Opcional: efecto hover */
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+#logotipo {
+    z-index: 10;
+    position: absolute;
+    width: auto;
     height: 5em;
+}
+
+header h1, header h2 {
+    position: absolute;
+    left: 50%;
+    /*moure cap a la dreta */
+    transform: translateX(-50%);
+    /* centra horizontalmente */
+    color: white;
+    /*  text-shadow: 0 0 10px black;*/
+    z-index: 10;
+    text-align: center;
+}
+
+header h1 {
+    top: 50%;
+    font-size: 30pt;
+}
+
+/* H2 un poco más abajo */
+header h2 {
+    top: calc(50% + 3em);
+    /* mueve h2 debajo del h1 */
+    font-size: 24pt;
 }
