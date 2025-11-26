@@ -6,54 +6,78 @@
 }
 h2, h3, ul, p {
     list-style: none;
-    padding-left: 0;
+    padding-left: 0; 
+    margin: 10px;
+}
+div h2{
+    color: aliceblue;
+}
+.estrella{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle; 
+    margin-right: 5px; 
+
 }
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
+    background-image: url("../Fotos/espacio.jpg")
 }
 .info {
     display: flex;
     width: 100%;
     height: auto;
     align-items: stretch;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0;
 }
 
 .datos {
     display: flex;
-    border: 2px solid #0f1567;
     border-radius: 8px;
     align-items: center;
     justify-content: center;
+
 
 }
 
 .nosotros, .ofrecemos, .funcion {
     border: 6px solid #150303;
-    border-radius: 20%;
-    background-color: #748907;
-    width: 400px;
+    background: rgba(125, 124, 125, 0.75); /* verde suave semitransparente */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    padding: 20px;
+    width: 300px;
     height: 400px;
-    text-align: center;
     overflow: hidden;
+    font-size: small;
+}
+.nosotros h2, .ofrecemos h2, .funcion h2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.nosotros p, .ofrecemos p, .funcion p {
+    text-align: left;
 }
 
 .estrellas, .planetas, .satelites, .Nebulosas {
     border: 2px solid #0f1567;
     border-radius: 50%;
-    width: 390px;
-    height: 390px;
+    width: 380px;
+    height: 380px;
     border: 6px solid #150303;
     overflow: hidden; /* Evita que el contenido se desborde */
     padding: 50px;
+    font-size: small;
+    background-color: rgba(125, 124, 125, 0.75);
 }
 
 .datos h3 {
     text-align: center;
+    font-size: 1.5rem;
 }
 .datos ul {
     text-align: start;
