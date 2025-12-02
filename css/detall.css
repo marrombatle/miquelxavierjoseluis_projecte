@@ -1,0 +1,28 @@
+main{
+    background-image: url("../Fotos/espacio.jpg");
+}
+
+table {
+    border-collapse: collapse; /*collapsam la taula perque no es quedi espais entre els td i th*/
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border: 0.15em solid rgb(255, 0, 0);
+    margin: auto;
+}
+table img {
+    width: 20em;
+    height: auto;
+}
+
+article {
+    overflow-x: auto; /* per poder fer que sa taula tengui una barra per moure la taula */ 
+}
+
+article img {
+    width: 100%;
+    max-width: 150px; /* ajusta según tu diseño */
+    height: auto;
+}

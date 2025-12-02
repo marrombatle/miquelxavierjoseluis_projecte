@@ -93,3 +93,16 @@ header h2 {
     /* mueve h2 debajo del h1 */
     font-size: 24pt;
 }
+
+@media (max-width: 768px) {
+   
+    header{
+        height: 15em;
+    }
+}
+
+
+@media (max-width: 588px) {
+    
+    
+}
