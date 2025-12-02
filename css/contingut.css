@@ -1,5 +1,7 @@
 main {
     background: url('/img/fondohtmlgalaxia.jpg');
+    background-attachment: fixed;
+    min-height: 100vh;  /* ocupa mínimo toda la altura de la pantalla */
 }
 
 main, h1 {
@@ -61,13 +63,22 @@ h3 {
 .action button {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+    padding-left: 1.4em;
+    padding-right: 1.4em;
     background-color: #646464;
     border-radius: 0.5em;
     color: black;
     margin-top: 1em;
     border-color: black;
+    transition: 0.3s;
 }
-
 .action button:hover {
     background-color: #808080;
+}
+
+.price {
+    font-size: 1.2em;
+    color: black;
+    margin-top: 0.9em;
+    margin-bottom: 0.5em;
 }

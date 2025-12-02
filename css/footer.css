@@ -5,7 +5,6 @@ footer {
     background-image: url(/img/footerimg.jpg); /* Color de fons  */
     color: #C0C0C0; /* Color del texte */
     padding: 40px 20px 20px; /* Espai intern */
-    margin-top: 50px; /* Separació del contingut superior */
 }
 
 /* Secció que conté els artícles */
@@ -16,7 +15,6 @@ footer section {
     align-items: flex-start; /* Alinea els elements a l'inici de l'eix vertical */
     max-width: 1200px; /* Amplada màxima del contenidor */
     margin: 0 auto; /* Centra el contenidor horizontalment */
-    gap: 30px; /* Espaci entre los artícles */
 }
 
 /* Cada artículo */
@@ -84,7 +82,7 @@ footer article:last-child {
 @media (max-width: 768px) {
    
     footer section {
-        flex-direction: column; /* Posa els elemtns en fila horitzontalment com una pila */
+        flex-direction: column; /* Posa els elemts en fila horitzontalment com una pila */
         align-items: center; 
     }
     
