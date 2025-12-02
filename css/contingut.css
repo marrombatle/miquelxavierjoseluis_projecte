@@ -1,13 +1,16 @@
+/* Estilo para el contenedor principal */
 main {
     background: url('/img/fondohtmlgalaxia.jpg');
     background-attachment: fixed;
     min-height: 100vh;  /* ocupa mínimo toda la altura de la pantalla */
 }
 
+/* Elimina margen superior en main y h1 */
 main, h1 {
     margin-top: 0;
 }
 
+/* Estilo para el título principal (h1) */
 h1 {
     text-align: center;
     margin-bottom: 0.5em;
@@ -15,6 +18,7 @@ h1 {
     font-size: 6em;
 }
 
+/* Estilo para los subtítulos (h2) */
 h2 {
     text-align: center;
     margin-top: 2em;
@@ -23,8 +27,8 @@ h2 {
     font-size: 4em;
 }
 
-/* ...Los arituculos tendran un borde y sus dimensiones... */
-.product {     /* evita que ocupe 100% del ancho */
+/* Estilo para los productos */
+.product {   
     width: 20em;               /* ancho fijo por caja (ajusta si quieres) */
     padding: 1em;              /* espacio entre borde y contenido */
     margin: 0.8em;               /* espacio entre cajas */
@@ -34,6 +38,7 @@ h2 {
     align-items: center;
     text-align: center;
 }
+
 /* ...Cada imagen, de la clase producto tendra sus dimensiones... */
 .product img {
     justify-content: center;
@@ -41,6 +46,7 @@ h2 {
     transition: transform 1s, filter 1s;
     padding-top: 2em;
 }
+
 /* ...Y las secciones tendran un display flex para que se adapten... */
 section {
     display: flex;
@@ -48,11 +54,13 @@ section {
     justify-content: center;    
 }
 
+/* Efecto para las imágenes de los productos */
 .product img:hover {
-    transform: scale(1.25);
-    filter: drop-shadow(0 2em 5em rgba(0, 0, 0, 0.8));
+    transform: scale(1.25); /* Aumenta el tamaño de la imagen al pasar el ratón */
+    filter: drop-shadow(0 2em 5em rgba(0, 0, 0, 0.8)); /* Sombra oscura alrededor de la imagen */
 }
 
+/* Estilo para los subtítulos de productos (h3) */
 h3 {
     color: black;
     font-size: 1.5em;
@@ -60,6 +68,7 @@ h3 {
     margin-bottom: 0.5em;
 }
 
+/* Estilo para los botones de acción */
 .action button {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -70,15 +79,33 @@ h3 {
     color: black;
     margin-top: 1em;
     border-color: black;
-    transition: 0.3s;
+    transition: 0.3s; /* Transición suave para cambios */
 }
+
+/* Efecto de colo de fondo para los botones de acción */
 .action button:hover {
     background-color: #808080;
 }
 
+/* Estilo para los precios */
 .price {
     font-size: 1.2em;
     color: black;
     margin-top: 0.9em;
     margin-bottom: 0.5em;
+}
+
+/* responsive: h1 y h2 se adapta según tamaño de pantalla */
+@media (max-width: 1200px) {
+    h1 { font-size: 4.5em; }
+    h2 { font-size: 3.5em; }
+}                               
+@media (max-width: 768px) {
+    h1 { font-size: 3em; }
+    h2 { font-size: 2.5em; }
+}   
+
+@media (max-width: 480px) {
+    h1 { font-size: 2em; }
+    h2 { font-size: 2em; } 
 }
