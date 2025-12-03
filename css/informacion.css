@@ -11,19 +11,19 @@ main {
 }
 
 h2, h3, ul, p {
-    list-style: none;
-    padding-left: 0; 
-    margin: 10px;
+    list-style: none; /*quita los puntos de las finas*/
+    padding-left: 0; /*Le quita el padding que aparece automaticamente predefinido*/
+    margin: 10px; /*Margen general a todos los h2,h3,ul y p*/
 }
 div h2{
-    color: aliceblue;
+    color: aliceblue; /*Color de las letras del enunciado "Datos Astronomicos de Interes"*/
 }
 
 /* Imagen de la Estrellita de mis H2 de Info*/
 .estrella{
     width: 24px;
     height: 24px;
-    vertical-align: middle; 
+    vertical-align: middle; /*Esto hace que la estrellita y el texto este vien alineado, lo tuve que poner porque la imagen venia con un tamaño predefinido que me rompia la alineacion*/
     margin-right: 5px; 
 }
 /* Imagen de la Estrellita de mis H2 de Info*/
@@ -37,7 +37,7 @@ div h2{
     align-items: stretch;
     justify-content: space-evenly;
     padding: 0;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*Todas las cajas que tengo dentro de .info, que son las tres siguientes, pasaran hacia abajo cuando no quepan juntas*/
 }
 .nosotros, .ofrecemos, .funcion {
     border: 6px solid #150303;
@@ -47,19 +47,19 @@ div h2{
     padding: 20px;
     width: 250px;
     height: auto;
-    overflow: hidden;
-    font-size: small;
+    overflow: hidden; /*Oculta todo el contenido que sobresalga*/
+    font-size: small; /*texto pequeño*/
 }
 .nosotros h2, .ofrecemos h2, .funcion h2 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.5rem; /*tamaño texto*/
 }
 .ofrecemos h3 {
     text-align: center;
 }
 .nosotros p, .ofrecemos p, .ofrecemos ul, .funcion p {
     text-align: left;
-    font-weight: 600;
+    font-weight: 600; /*grosor*/
     color: #020423;
 }
 /* Cajas Primera Fila*/
@@ -93,7 +93,7 @@ div h2{
     padding: 50px;
     font-size: small;
     background-color: rgba(125, 124, 125, 0.75);
-    transition: 1.3s ease;
+    transition: 1.3s ease; /*Transicion Inicial de la esfera*/
     position:relative;
     overflow:hidden; 
     min-width: 260px;
@@ -123,14 +123,14 @@ div h2{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1.7);;
+    transform: translate(-50%, -50%) scale(1.7); /*tamaño inicial*/
 }
 .estrellas:hover .img_sol{
     opacity:1;
     position:absolute;
     top:50%;
     left:50%;
-    transform: translate(-50%, -50%) scale(1.4);
+    transform: translate(-50%, -50%) scale(1.4); /*Tamaño final*/
 }
 /* Hover estrella*/
 
@@ -157,14 +157,14 @@ div h2{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1.5);;
+    transform: translate(-50%, -50%) scale(1.5); /*Tamaño inicial*/
 }
 .planetas:hover .img_planeta{
     opacity:1;
     position:absolute;
     top:50%;
     left:50%;
-    transform: translate(-50%, -50%) scale(1.3);
+    transform: translate(-50%, -50%) scale(1.3); /*Tamaño Final*/
 }
 /* Hover Planeta*/
 
@@ -225,7 +225,7 @@ div h2{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1.5);;
+    transform: translate(-50%, -50%) scale(1.5);
 }
 .Nebulosas:hover .img_nebulosa{
     opacity:1;
@@ -235,34 +235,19 @@ div h2{
     transform: translate(-50%, -50%) scale(1.2);
 }
 /*Hover Nebulosa*/
-@media (max-width: 600px){
-    p, h1, h2, ul, li{
-        font-size: 60%;
-    }
-    .nosotros h2, .ofrecemos h2, .funcion h2 {
-        text-align: center;
-        font-size: 80%;
-    }
-    .nosotros p, .ofrecemos p, .ofrecemos ul, .funcion p {
-        font-size: 80%;
-    }
-    .info{
-        width: 60%;
-        height: 60%;
-    }
-    .datos{
-        width: 60%;
-        height: 80%;
-    }
+
+/*Para telefonos mobiles*/
+@media (max-width: 600px) {
     .nosotros, .ofrecemos, .funcion {
-        width: 60%;
-        height: 60%;
+        transform: scale(0.7); /* tamaño reducido */
+        margin: -40px 0; /* corrige el espacio extra que ocurre cuando se escala */
+        transition: 1.2s;
     }
-
-
-
+    .estrellas, .planetas, .satelites, .Nebulosas {
+        transform: scale(0.7); /* tamaño reducido */
+        margin: -40px 0; /* corrige el espacio extra que aparece cuando se escala */
+    }
 }
-
-
+/*Para telefonos mobiles*/
 
 
