@@ -1,79 +1,75 @@
 /* FOOTER */
-
-/* Contenidor principal */
+/* Contenidor principal on tenim una imatge de fons */
 footer {
-    background-image: url(/img/footerimg.jpg); /* Color de fons  */
-    color: #C0C0C0; /* Color del texte */
-    padding: 40px 20px 20px; /* Espai intern */
+    background-image: url(/img/footerimg.jpg);
+    color: #C0C0C0; 
+    padding: 40px 20px 20px; 
 }
 
 /* Secció que conté els artícles */
 footer section {
-    display: flex; /* Activa flexbox per la distribució flexible */
-    flex-wrap: wrap; /* Permit que els elements es tornin en múltiples línies */
+    display: flex; /* Activa flexbox */
+    flex-wrap: wrap; /* Permet que els elements es tornin en múltiples línies */
     justify-content: space-around; /* Distribieix l'espaci entre elements */
     align-items: flex-start; /* Alinea els elements a l'inici de l'eix vertical */
     max-width: 1200px; /* Amplada màxima del contenidor */
     margin: 0 auto; /* Centra el contenidor horizontalment */
 }
 
-/* Cada artículo */
+/* Cada article */
 footer article {
-    flex: 1; /* Permit que cada article creixi i ocupi l'espai disponible */
-    min-width: 250px; /* Amaplada mínima */
-    text-align: center; /* Centra el */
+    min-width: 250px; /* Amaplada mínima del contenidor*/
+    text-align: center; /* Centra el contenidor*/
 }
 
-/* Títulos h4 */
 footer h4 {
-    font-size: 1.3rem; /* Tamany de la font */
+    font-size: 1.3rem; 
     margin-bottom: 15px; /* Espai inferior */
-    color: #C0C0C0; /* Color del text */
-    font-weight: 600; /* Gruixa de la font */
+    color: #C0C0C0; 
+    font-weight: 6em; /* Gruixa de la font */
 }
 
-/* REDES SOCIALES */
-
+/* Xarxes socials */
 footer article a {
     display: inline-block; /* Es torna de bloc que ocupi tota una línia */
     margin: 0 10px; /* Espai horizontal entre icones */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Animació dels enllaços */
 }
-
+/* posam una alçada i amaplada */
 .social img {
-    width: 40px; /* Amplada */
-    height: 40px; /* Altura */
+    width: 3em; 
+    height: 3em; 
 }
 
 .social:hover {
     transform: translateY(-5px); /* Puja la icona 5px cap a dalt  */
 }
 
-/* SECCIÓ CONTACTO */
+/* SECCIÓ CONTACTE */
 
 footer address {
-    font-style: normal; /* Elimina la cursiva por defecto del elemento address */
-    line-height: 1.8; /* Espaciado entre líneas para mejor legibilidad */
+    font-style: normal; /* Elimina la cursiva de l'element address */
+    line-height: 1.8; /* espai entre líneas  */
 }
 
 footer address p {
-    margin: 5px 0; /* Pequeño margen vertical entre párrafos */
+    margin: 5px 0; /* Marge entre paràgrefs */
 }
 
 footer address a {
     color: #3498db; 
-    text-decoration: none; /* Elimina el subrayado por defecto */
+    text-decoration: none; /* Elimina el subrallat per defecte */
 }
 
 /* COPYRIGHT */
 
 footer article:last-child {
-    flex-basis: 100%; /* Ocupa todo el ancho disponible */
-    margin-top: 20px; /* Espacio superior */
-    padding-top: 20px; /* Relleno superior */
-    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Línea divisoria sutil */
-    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
-    color: #95a5a6; /* Color gris más apagado */
+    flex-basis: 100%; /* Ocupa tota la amplada disponible */
+    margin-top: 20px; 
+    padding-top: 20px; 
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Línea divisoria  */
+    font-size: 0.9rem; 
+    color: #95a5a6; 
 }
 
 /* RESPONSIVE*/
@@ -82,7 +78,7 @@ footer article:last-child {
 @media (max-width: 768px) {
    
     footer section {
-        flex-direction: column; /* Posa els elemts en fila horitzontalment com una pila */
+        flex-direction: column; /* Posa els elements en fila horitzontalment com una pila */
         align-items: center; 
     }
     
