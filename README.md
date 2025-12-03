@@ -1,4 +1,4 @@
-# ProjecteWebLLM
+<img width="448" height="803" alt="image" src="https://github.com/user-attachments/assets/913785a7-bafd-4c7b-bffd-1686af921bf9" /># ProjecteWebLLM
 
 # Estructura del Projecte
 
@@ -30,6 +30,34 @@ Informació de contacte i dades de l’empresa: qui som, què oferim i com conta
 
 # Repartiment de Tasques
 
-- **Miquel** — Creació de *index.html*  
-- **Xavier** — Creació de *contingut.html*  
-- **Jose Luis** — Creació de *info.html* i *detall.html*
+- **HTML**
+  - **Miquel** — Creació de *index.html*  
+  - **Xavier** — Creació de *contingut.html*  
+  - **Jose Luis** — Creació de *info.html* i *detall.html*
+ 
+- **CSS**
+  - **Miquel** — Creació de *style.css*, *header.css*, *footer.css*, *detall.css*
+  - **Xavier** — Creació de *contingut.css*  
+  - **Jose Luis** — Creació de *informacion.css* 
+
+# Disseny Visual
+
+- **Colors utilitzats:**  
+  - Text principal de la pàgina d'inici, de la pàgina de detall i de la contingut: **blanc**  
+  - Els textos de la pagina d'informació: **aliceblue**  
+  - Títols de la pàgina d’informació: **negre**
+- **Tipografia:**  
+  - S’ha utilitzat la font **Arial** per mantenir un estil net i llegible.
+
+# Disseny Adaptatiu (Responsive Design)
+
+La web s’adapta correctament a diferents mides de pantalla (mòbil, tauleta i escriptori).  
+
+- Elements que es reestructuren en columnes o files segons l’ample de pantalla.
+
+<img width="448" height="803" alt="image" src="https://github.com/user-attachments/assets/af98deab-1970-4bff-b030-d2403be450d8" />
+
+- Imatges i targetes que s’ajusten proporcionalment per evitar desbordaments.  
+- Menú i seccions que es compacten o s’empaqueten en formats més reduïts en dispositius mòbils.  
+
+
