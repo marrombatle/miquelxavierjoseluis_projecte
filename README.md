@@ -4,8 +4,8 @@
 ├── contingut.css
 ├── style.css
 ├── detall.css
-└── informacion.css
-└── header.css
+├── informacion.css
+├── header.css
 └── footer.css
 
 /img
