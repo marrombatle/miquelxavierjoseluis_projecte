@@ -1,5 +1,3 @@
-<img width="448" height="803" alt="image" src="https://github.com/user-attachments/assets/913785a7-bafd-4c7b-bffd-1686af921bf9" /># ProjecteWebLLM
-
 # Estructura del Projecte
 
 /css
@@ -57,7 +55,10 @@ La web s’adapta correctament a diferents mides de pantalla (mòbil, tauleta i 
 
 <img width="448" height="803" alt="image" src="https://github.com/user-attachments/assets/af98deab-1970-4bff-b030-d2403be450d8" />
 
-- Imatges i targetes que s’ajusten proporcionalment per evitar desbordaments.  
+<img width="447" height="803" alt="image" src="https://github.com/user-attachments/assets/90812fb3-e2fc-4187-80fa-17ca03adadf5" />
+
 - Menú i seccions que es compacten o s’empaqueten en formats més reduïts en dispositius mòbils.  
+
+<img width="523" height="792" alt="image" src="https://github.com/user-attachments/assets/213547d9-062c-49d6-b653-0c78ab37b7c2" />
 
 
