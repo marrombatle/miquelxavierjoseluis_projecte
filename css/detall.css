@@ -1,28 +1,37 @@
-main{
+main {
     background-image: url("../Fotos/espacio.jpg");
+    /* feim que el fons del main sigui una imatge */
 }
 
 table {
-    border-collapse: collapse; /*collapsam la taula perque no es quedi espais entre els td i th*/
+    border-collapse: collapse;
+    /*colapsam la taula perque no es quedi espais entre els td i th*/
 }
-th, td {
+
+th,
+td {
+    /* estils per les files i columnes */
     padding: 10px;
     text-align: center;
     color: white;
     border: 0.15em solid rgb(255, 0, 0);
     margin: auto;
 }
+
 table img {
+    /* que les imatges de la taula tenguin uan altura automatica i una amplada determinada*/
     width: 20em;
     height: auto;
 }
 
 article {
-    overflow-x: auto; /* per poder fer que sa taula tengui una barra per moure la taula */ 
+    overflow-x: auto;
+    /* per poder fer que sa taula tengui una barra per moure la taula */
 }
 
-article img {
-    width: 100%;
-    max-width: 150px; /* ajusta según tu diseño */
-    height: auto;
+@media (max-width: 588px) {/* posam mes petites les imatges  */
+
+    article img {
+        width: 10em;
+    }
 }

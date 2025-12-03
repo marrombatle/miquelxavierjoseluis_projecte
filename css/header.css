@@ -1,122 +1,179 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* font per a tota la plana*/
 }
-/* Quitar márgenes del body */
+/* posam el boy sense marges perque ens quedi el header complet */
 body {
     margin: 0; 
     padding: 0;
 }
-
-/* Contenedor del video */
+/* posam el header en posicio relativa amb la altura i amplada que ocupi tota la pagina */
 header {
     position: relative;
     width: 100%;
     height: 100vh;
-    /* Ocupa toda la pantalla */
-    overflow: hidden;
-    /* Oculta lo que sobresalga */
-    display: flex;
+    overflow: hidden; /* amaga tot el que sobresurti del header*/
+    display: flex; /* feim que sigui flexible */
 }
-
-/* Video de fondo */
+/* feim que sigui absolut i que no tengui marges i que ocupi tot l'espai i que no tengui bordes ni marges */
 header video {
-    position: absolute;
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    /* Evita barras blancas */
-    z-index: 1;
-    /* Video al fondo */
-    border: none;
+    object-fit: cover; /* propietat que serveix perque ocupi tot l'espai sense que es deformi */
+    z-index: 1; /* perque estigui per devalla del menu*/
+    border: none; 
     margin: 0;
     padding: 0;
 }
 
-/* Menú superpuesto */
+/* Menú superposat per damunt del video amb marges i que sigui flexible  */
 header ul {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 0.5em;
+    right: 0.5em;
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    z-index: 10;
-    /* Por encima del video */
+    list-style: none; /* per llevar els punts de la llista */
+    z-index: 10; /* perque estigui per damunt del video*/
 }
-header ul li{
+/* marges entre els enllaços perque no se toquin */
+header ul li {
     margin: 0em 2em 0em 0em;
 }
-
-/* Enlaces del menú */
+/* estils per els enllaços */
 header ul li a {
     color: white;
     font-size: 20px;
     text-decoration: none;
     font-weight: bold;
-    text-shadow: 0 0 5px black;
-    /* Para que se vea sobre el video */
+    text-shadow: 0 0 5px black; /*una hombre negre */
 }
-
-/* Opcional: efecto hover */
+/* quan pasam per damunt es posa una linia devall de l'enllaç */
 header ul li a:hover {
     text-decoration: underline;
 }
-
+/* posam el logotip per damunt del video amb posicio absoluta posam una altura perque 
+la amplada sigui automatica*/
 #logotipo {
     z-index: 10;
     position: absolute;
     width: auto;
     height: 5em;
 }
-
+/* els textes damunt el video emprant la posicio i el z-index, 
+que estuifuin centrats usant el left i el transform (venria a ser per moure)*/
 header h1, header h2 {
     position: absolute;
     left: 50%;
-    /*moure cap a la dreta */
     transform: translateX(-50%);
-    /* centra horizontalmente */
     color: white;
-    /*  text-shadow: 0 0 10px black;*/
-    z-index: 10;
+    z-index: 5;
     text-align: center;
 }
-
+/* per a cada h1 i h2 posam que estigui enmig i un tamany de font aquest cop emprant pt de punts */ 
 header h1 {
     top: 50%;
     font-size: 30pt;
 }
 
-/* H2 un poco más abajo */
 header h2 {
-    top: calc(50% + 3em);
-    /* mueve h2 debajo del h1 */
+    top: calc(50% + 3em); /*propitat per fer una suma */
     font-size: 24pt;
 }
 
+/* Ocultam el checkbox i label del menu per defecte */
+#menu {
+    display: none;
+}
+/* amagam el label perque nomes volem que es vegi en movil*/
+label[for="menu"] {
+    display: none;
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer; /* es canvia el punter quan pasam per damunt */
+    z-index: 11;
+    text-shadow: 0 0 5px black;
+}
 
+/* Ocultar la X per defecte perque nomes es vegi en tablet i movil */
+label[for="menu"] span:last-child {
+    display: none;
+}
+
+/* Quan el menú està obert  amagam el primer span que la icona de menu hamburguesa 
+ quan es clica el menu es a dir damunt la icona deim que el primer fill del label se amagui*/
+#menu:checked ~ label[for="menu"] span:first-child {
+    display: none;
+}
+/* Mostram el segon span es a dir la X quan el checkbox està marcat es a dir quan clicam la icona de menu hamburguesa*/
+/* Quan es torni a clicar li deim que el darrer fill del label es mostri */
+#menu:checked ~ label[for="menu"] span:last-child {
+    display: block;
+}
+
+/* RESPONSIVE a partir de la determinada mida de tablet*/
 @media (max-width: 764px) {
-    
+    /* feim mes petit el header i els textos com h1 i h2 */
     header {
         height: 15em;
     }
-    header h1{
+    
+    header h1 {
         font-size: 15pt;
     }
-    header h2{
+    
+    header h2 {
         font-size: 12pt;
+    }
+    
+    /* Mostram la icona de menu hamburguesa */
+    label[for="menu"] {
+        display: block;
+    }
+    
+    /* Menú el posam en vertical (columna) en flexbox posam que estigui fixe una determinada amplada i que ocupi ç
+    tota la altura de la pantalla tambe incloem marges emprant top i rigth */
+    header ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 30%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s;
+        padding: 2em;
+    }
+    /* marge entre els enllaços */
+    header ul li {
+        margin: 1.5em 0;
+    }
+    /* mida de la lletra dels enllaços del menu*/
+    header ul li a {
+        font-size: 1.5em;
+    }
+    
+    /* Feim que el menu sigui visible indicant-li que es mogui a la posicio 0 desde la dreta 
+    li esteim dient que quan el menu estigui clicat es a dir quan es cliqui damunt la icona 
+    es mostri el menu basicament el movem no es que reament es mostri */
+    #menu:checked ~ ul {
+        right: 0;
+        margin: 0;
     }
 }
 
-
-@media (max-width: 588px) {
-    
-    header h1{
+@media (max-width: 588px) { /* simplemnte feim mes petit el texte dels h1 i h2*/
+    header h1 {
         font-size: 12pt;
     }
-    header h2{
+    
+    header h2 {
         font-size: 10pt;
     }
 }
