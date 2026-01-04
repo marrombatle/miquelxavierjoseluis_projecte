@@ -1,0 +1,146 @@
+/* Estilos para el icono de login en el menú */
+.login-icon {
+    background: rgba(102, 126, 234, 0.9);
+    width: 2em;
+    height: 2em;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.login-icon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(102, 126, 234, 0.8);
+}
+
+.login-icon img {
+    filter: brightness(0) invert(1); /* Hace la imagen blanca */
+}
+
+/* Ocultar el checkbox del modal */
+#modal-toggle {
+    display: none;
+}
+
+/* Estilos del modal de login */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Mostrar modal cuando el checkbox está marcado */
+#modal-toggle:checked ~ .modal {
+    display: flex;
+}
+
+/* Formulario de login */
+.login-form {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+/* Botón para cerrar el modal */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+/* Título del formulario */
+.login-form h2 {
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+}
+
+/* Grupos de formulario */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+/* Botón de envío */
+.submit-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+/* Enlace de contraseña olvidada */
+.forgot-password {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.forgot-password a {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
