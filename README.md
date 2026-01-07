@@ -65,4 +65,31 @@ La web s’adapta correctament a diferents mides de pantalla (mòbil, tauleta i 
 
 <img width="523" height="792" alt="image" src="https://github.com/user-attachments/assets/213547d9-062c-49d6-b653-0c78ab37b7c2" />
 
+# Formularis
 
+## Formulari de Login
+
+## Implementació
+Formulari modal que es mostra/oculta mitjançant un checkbox ocult (`#modal-toggle`) i CSS (`:checked`). En fer clic a la icona de login o al botó de tancament (×), s'alterna la visibilitat del modal mitjançant `display: flex/none`.
+
+## Tipus d'entrada
+- **`type="email"`**: Camp de correu amb validació html de format email
+- **`type="password"`**: Camp de contrasenya que oculta els caràcters introduïts
+- Ambdós camps són obligatoris (`required`)
+
+## Estils i coherència visual
+- **Paleta de colors**: Morat/blau (`#667eea`, `#764ba2`) 
+- **Border-radius consistent**: 5px en inputs/botons, 10px al contenidor
+- **Espaiat uniforme**: 20px entre grups, 12px padding en inputs
+- **Transicions suaus**: 0.2s-0.3s en hover/focus per fluïdesa
+- **Disseny responsive**: `width: 90%` i `max-width: 400px`
+
+## Validació
+### Email:
+- Pattern: `[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$` (format email vàlid, només minúscules)
+
+### Contrasenya:
+- `minlength="8"` i `maxlength="12"`
+- Pattern: `[A-Za-z0-9!?-]{8,12}` (lletres, números i caràcters `!`, `?`, `-`)
+
+La validació és del costat del client mitjançant atributs HTML5, amb feedback visual mitjançant canvi de color de la vora en `:focus`.
