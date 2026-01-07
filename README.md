@@ -93,3 +93,21 @@ Formulari modal que es mostra/oculta mitjançant un checkbox ocult (`#modal-togg
 - Pattern: `[A-Za-z0-9!?-]{8,12}` (lletres, números i caràcters `!`, `?`, `-`)
 
 La validació és del costat del client mitjançant atributs HTML5, amb feedback visual mitjançant canvi de color de la vora en `:focus`.
+
+### Tipus d'entrada utilitzats
+- **Input de text (`type="text")`** per als camps de nom i apellidos, amb restriccions de longitud i només lletres.  
+- **Input de correu electrònic (`type="email")`** per validar automàticament el format de correu electrònic.  
+- **Botó de tipus submit (`<button type="submit">`)** per enviar el formulari.
+
+### Estil i coherència visual
+Els camps del formulari s'han estilitzat amb **Flexbox** per garantir una disposició neta i alineada, ocupant tot l’ample disponible. Els inputs i el textarea tenen colors i bordes coherents amb els productes (`#646464` i `#808080`) i bordes arrodonits.  
+El botó d'enviament reutilitza el **mateix estil que els botons dels productes**, amb efecte `hover`, per a que se vegi igual tota sa pagina. També s'han definit estats de focus.
+
+### Control de la validació
+S'ha aplicat la **validació bàsica d'HTML5** en tots els camps obligatoris:
+- L'atribut `required` impedeix enviar el formulari si els camps estan buits.  
+- Els inputs de text tenen `minlength`, `maxlength` i un `pattern` per restringir els caràcters admesos.  
+- L'input de correu electrònic té `type="email"` per validar automàticament el format del correu.  
+- El textarea té un mínim i màxim de caràcters per assegurar comentaris raonables.  
+
+Aquesta implementació garanteix que els usuaris no puguin enviar formularis incomplets o amb dades en format incorrecte, tot mantenint una experiència visual i funcional coherent amb la web.

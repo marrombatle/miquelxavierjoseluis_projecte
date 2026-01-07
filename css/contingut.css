@@ -95,6 +95,74 @@ h3 {
     margin-bottom: 0.5em;
 }
 
+form {
+    width: 100%;
+    max-width: 40em;
+    margin: 4em auto;
+    padding: 2em;
+    background: #808080;
+    border: 0.4em solid #646464;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* cada campo del formulario */
+.Formularios_individuales {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2em;
+}
+
+/* labelss */
+.Formularios_individuales label {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0.3em;
+}
+
+/* Inputs */
+.Formularios_individuales input,
+.Formularios_individuales textarea {
+    padding: 0.7em;
+    border-radius: 0.5em;
+    border: 0.3em solid #646464;
+    background-color: #f2f2f2;
+    font-size: 1em;
+    width: 100%;
+    transition: 0.3s;
+}
+
+/* Focus: borde y fondo diferente */
+.Formularios_individuales input:focus,
+.Formularios_individuales textarea:focus {
+    outline: none;
+    border-color: black;
+    background-color: #ffffff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Botón enviar igual que los botones de los producots*/
+.boton {
+    margin-top: 1em;
+    padding: 0.6em 1.8em;
+    background-color: #646464;
+    border-radius: 0.6em;
+    border: 0.3em solid black;
+    color: black;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+/* Hover botón */
+.boton:hover {
+    background-color: #808080;
+}
+
 /* responsive: h1 y h2 se adapta según tamaño de pantalla */
 @media (max-width: 1200px) {
     h1 { font-size: 4.5em; }
