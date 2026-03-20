@@ -1,7 +1,7 @@
 /* FOOTER */
 /* Contenidor principal on tenim una imatge de fons */
 footer {
-    background-image: url(/img/footerimg.jpg);
+    background-image: url(../img/footerimg.jpg);
     color: #C0C0C0; 
     padding: 40px 20px 20px; 
 }

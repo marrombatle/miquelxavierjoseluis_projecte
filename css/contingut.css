@@ -1,6 +1,6 @@
 /* Estilo para el contenedor principal */
 main {
-    background: url('/img/fondohtmlgalaxia.jpg');
+    background: url("../img/fondohtmlgalaxia.jpg");
     background-attachment: fixed;
     min-height: 100vh;  /* ocupa mínimo toda la altura de la pantalla */
 }
