@@ -51,7 +51,7 @@
             <h2>Iniciar sesión</h2>
             <!-- Cream un formulari amb les restriccions pertinents per controlar que nomes ens puguin 
              posar un correu i contrasenya adecuades al que volem-->
-            <form action="#" method="post">
+            <form method="post">
                 <div class="form-group">
                     <label for="email">E-mail</label>
                     <input type="email" id="email" name="email" required autofocus 
@@ -62,6 +62,7 @@
                     <input type="password" id="password" name="password" required 
                     minlength="8" maxlength="12" placeholder="Contraseña" pattern="[A-Za-z0-9!?-]{8,12}">
                 </div>
+                <div id="error-message" style="color: red; margin-top: 10px;"></div>
                 <button type="submit" class="submit-btn">Iniciar Sesión</button>
                 <!--<div class="forgot-password">
                     <a href="#">Forgot Password?</a>
@@ -131,5 +132,7 @@
         </section>
     </footer>
 </body>
+
+<script src="js/scripts.js"></script>
 
 </html>
