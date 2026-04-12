@@ -17,6 +17,7 @@
                 <li><a href="contingut.html">Contingut</a></li>
                 <li><a href="detall.html">Detall</a></li>
                 <li><a href="info.html">Info</a></li>
+                <li><button id="botonTema" onclick="cambiarTema()">🌙 Modo Oscuro</button></li>
             </ul>
         </nav>
         <video autoplay loop muted>
@@ -181,8 +182,9 @@
         </section>
         <!-- Formularios -->
         <h2>Valora Nuestra tienda</h2>
+        <button id="botonFormulario" onclick="mostrarOcultar()">Mostrar Formulario</button>
         <section>
-            <form>
+            <form id="formularioValoracion" style="display:none;">
                 <!-- Correo electrónico -->
                 <div class="Formularios_individuales">
                     <label for="email">Correu electrònic</label>
@@ -209,6 +211,38 @@
                 </div> 
             </form>
         </section>
+        <script>
+            function cambiarTema() {
+                const boton = document.getElementById('botonTema');
+                
+                if (document.body.classList.contains('modo-oscuro')) {
+                    document.body.classList.remove('modo-oscuro');
+                    boton.textContent = '🌙 Modo Oscuro';
+                } else {
+                    document.body.classList.add('modo-oscuro');
+                    boton.textContent = '☀️ Modo Claro';
+                }
+            }
+
+            // Efectos simples de ratón
+            const boton = document.getElementById('botonTema');
+            boton.onmouseover = function() { this.style.transform = 'scale(1.15)'; this.style.boxShadow = '0 0 10px rgba(255, 193, 7, 0.6)'; };
+            boton.onmouseout = function() { this.style.transform = 'scale(1)'; this.style.boxShadow = 'none'; };
+
+            // Mostrar/Ocultar Formulario
+            function mostrarOcultar() {
+                const formulario = document.getElementById('formularioValoracion');
+                const botonForm = document.getElementById('botonFormulario');
+                
+                if (formulario.style.display === 'none') {
+                    formulario.style.display = 'flex';
+                    botonForm.textContent = 'Ocultar Formulario';
+                } else {
+                    formulario.style.display = 'none';
+                    botonForm.textContent = 'Mostrar Formulario';
+                }
+            }
+        </script>
     </main>
     <footer>
         <section>

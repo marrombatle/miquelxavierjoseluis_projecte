@@ -163,6 +163,98 @@ form {
     background-color: #808080;
 }
 
+/* estilos boton tema */
+#botonTema {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.2em;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* boton mostrar formulario */
+#botonFormulario {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1.4em;
+    padding-right: 1.4em;
+    background-color: #646464;
+    border-radius: 0.5em;
+    color: black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 0.3em solid #646464;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#botonFormulario:hover {
+    background-color: #808080;
+}
+
+/* MODO OSCURO */
+body.modo-oscuro h1,
+body.modo-oscuro h2 {
+    color: grey;
+}
+
+body.modo-oscuro .product {
+    background: #2a2a2a;
+    border-color: #555555;
+}
+
+body.modo-oscuro .product h3 {
+    color: grey;
+}
+
+body.modo-oscuro .product .price {
+    color: grey;
+}
+
+body.modo-oscuro .action button {
+    background-color: #444444;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+body.modo-oscuro .action button:hover {
+    background-color: #555555;
+}
+
+body.modo-oscuro #botonFormulario {
+    background-color: #444444;
+    color: #ffffff;
+    border: 0.3em solid #555555;
+}
+
+body.modo-oscuro #botonFormulario:hover {
+    background-color: #555555;
+}
+
+body.modo-oscuro #botonFormulario {
+    background-color: #444444;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+body.modo-oscuro #botonFormulario:hover {
+    background-color: #555555;
+}
+
+body.modo-oscuro #botonTema {
+    background-color: #666666;
+    color: #ffffff;
+}
+
 /* responsive: h1 y h2 se adapta según tamaño de pantalla */
 @media (max-width: 1200px) {
     h1 { font-size: 4.5em; }
