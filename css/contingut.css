@@ -2,11 +2,13 @@
 main {
     background: url("../img/fondohtmlgalaxia.jpg");
     background-attachment: fixed;
-    min-height: 100vh;  /* ocupa mínimo toda la altura de la pantalla */
+    min-height: 100vh;
+    /* ocupa mínimo toda la altura de la pantalla */
 }
 
 /* Elimina margen superior en main y h1 */
-main, h1 {
+main,
+h1 {
     margin-top: 0;
 }
 
@@ -28,10 +30,13 @@ h2 {
 }
 
 /* Estilo para los productos */
-.product {   
-    width: 20em;               /* ancho fijo por caja (ajusta si quieres) */
-    padding: 1em;              /* espacio entre borde y contenido */
-    margin: 0.8em;               /* espacio entre cajas */
+.product {
+    width: 20em;
+    /* ancho fijo por caja (ajusta si quieres) */
+    padding: 1em;
+    /* espacio entre borde y contenido */
+    margin: 0.8em;
+    /* espacio entre cajas */
     border: 0.4em solid #646464;
     border-radius: 2em;
     background: #808080;
@@ -51,13 +56,15 @@ h2 {
 section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;    
+    justify-content: center;
 }
 
 /* Efecto para las imágenes de los productos */
 .product img:hover {
-    transform: scale(1.25); /* Aumenta el tamaño de la imagen al pasar el ratón */
-    filter: drop-shadow(0 2em 5em rgba(0, 0, 0, 0.8)); /* Sombra oscura alrededor de la imagen */
+    transform: scale(1.25);
+    /* Aumenta el tamaño de la imagen al pasar el ratón */
+    filter: drop-shadow(0 2em 5em rgba(0, 0, 0, 0.8));
+    /* Sombra oscura alrededor de la imagen */
 }
 
 /* Estilo para los subtítulos de productos (h3) */
@@ -79,7 +86,8 @@ h3 {
     color: black;
     margin-top: 1em;
     border-color: black;
-    transition: 0.3s; /* Transición suave para cambios */
+    transition: 0.3s;
+    /* Transición suave para cambios */
 }
 
 /* Efecto de colo de fondo para los botones de acción */
@@ -106,6 +114,38 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+/* Estilo para el contenedor de valoraciones */
+#valoraciones {
+    width: 100%;
+    max-width: 40em;
+    margin: 4em auto;
+    padding: 2em;
+    background: #808080;
+    border: 0.4em solid #646464;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Estilo para la lista de valoraciones */
+#lista-valoraciones {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+}
+/* Estilo para cada valoración individual */
+#lista-valoraciones li {
+    background: #f2f2f2;
+    border: 0.2em solid #646464;
+    border-radius: 1em;
+    padding: 1rem;
+    text-align: left;
 }
 
 /* cada campo del formulario */
@@ -257,15 +297,66 @@ body.modo-oscuro #botonTema {
 
 /* responsive: h1 y h2 se adapta según tamaño de pantalla */
 @media (max-width: 1200px) {
-    h1 { font-size: 4.5em; }
-    h2 { font-size: 3.5em; }
-}                               
+    h1 {
+        font-size: 4.5em;
+    }
+
+    h2 {
+        font-size: 3.5em;
+    }
+}
+
 @media (max-width: 768px) {
-    h1 { font-size: 3em; }
-    h2 { font-size: 2.5em; }
-}   
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    #valoraciones {
+        width: 95%;
+        padding: 1.5em;
+    }
+
+    #lista-valoraciones {
+        gap: 0.8rem;
+    }
+
+    #lista-valoraciones li {
+        padding: 0.9rem;
+        font-size: 0.95rem;
+    }
+}
 
 @media (max-width: 480px) {
-    h1 { font-size: 2em; }
-    h2 { font-size: 2em; } 
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    #valoraciones {
+        width: 100%;
+        padding: 1em;
+        margin: 2em auto;
+    }
+
+    #valoraciones h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    #lista-valoraciones {
+        gap: 0.6rem;
+    }
+
+    #lista-valoraciones li {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+        border-radius: 0.8em;
+    }
 }

@@ -111,3 +111,24 @@ S'ha aplicat la **validació bàsica d'HTML5** en tots els camps obligatoris:
 - El textarea té un mínim i màxim de caràcters per assegurar comentaris raonables.  
 
 Aquesta implementació garanteix que els usuaris no puguin enviar formularis incomplets o amb dades en format incorrecte, tot mantenint una experiència visual i funcional coherent amb la web.
+
+## JS
+
+### Xavier: 1 - Interacció visual
+
+- **Mode clar / Mode fosc**  
+  Has de crear un botó i detectar quan l’usuari hi fa clic. Quan això passi, el que fas és canviar classes o estils del document (normalment del `body`) perquè els colors passin de clars a foscos o a l’inrevés. També pots guardar la preferència de l’usuari perquè es mantingui quan torni a entrar.
+
+- **Efectes de ratolí**  
+  Selecciones un element de la pàgina i detectes quan el ratolí entra a sobre (mouseover) i quan surt (mouseout). Quan entra, canvies algun estil (com el color, la mida o la vora), i quan surt, el tornes al seu estat original.
+
+- **Mostrar / Ocultar**  
+  Crees un botó i una secció (text o imatge). Quan l’usuari fa clic al botó, canvies la visibilitat de la secció: si està visible, l’amagues, i si està amagada, la mostres.
+
+### Miquel: 2 - Formularis i Comentaris (Gestió de dades)
+
+- **Validació de dades**  
+  Detectes quan l’usuari intenta enviar el formulari. Abans que s’enviï, comproves si els camps estan buits. Si algun ho està, evites l’enviament i mostres un missatge d’error. Si tot està correcte, deixes que continuï el procés o el gestiones com vulguis.
+
+- **Mur de comentaris**  
+  Quan l’usuari envia el formulari, agafes el text que ha escrit i el crees com un nou element dins la pàgina (per exemple, un paràgraf o un element de llista). Després l’afegeixes a una secció visible perquè aparegui immediatament, sense necessitat de recarregar la pàgina. També pots netejar el formulari després d’afegir el comentari.
