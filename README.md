@@ -117,7 +117,7 @@ Aquesta implementació garanteix que els usuaris no puguin enviar formularis inc
 ### Xavier: 1 - Interacció visual
 
 - **Mode clar / Mode fosc**  
-  Has de crear un botó i detectar quan l’usuari hi fa clic. Quan això passi, el que fas és canviar classes o estils del document (normalment del `body`) perquè els colors passin de clars a foscos o a l’inrevés. També pots guardar la preferència de l’usuari perquè es mantingui quan torni a entrar.
+  Has de crear un botó i detectar quan l’usuari hi fa clic. Quan això passi, el que fas és canviar classes o estils del document (normalment del `body`) perquè els colors passin de clars a foscos o a l’inrevés.
 
 - **Efectes de ratolí**  
   Selecciones un element de la pàgina i detectes quan el ratolí entra a sobre (mouseover) i quan surt (mouseout). Quan entra, canvies algun estil (com el color, la mida o la vora), i quan surt, el tornes al seu estat original.
